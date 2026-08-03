@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Plenitud Radio | Tu Refugio de Fe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "brand-red": "#E31E24",
+                    "surface-bright": "#fbf9f8",
+                    "surface-container-low": "#f5f3f3",
+                    "primary": "#031636",
+                    "surface-container-highest": "#e4e2e2",
+                    "primary-fixed": "#d8e2ff",
+                    "on-tertiary-fixed-variant": "#454748",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#735c00",
+                    "inverse-primary": "#b6c6f0",
+                    "on-background": "#1b1c1c",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#8293ba",
+                    "outline": "#75777f",
+                    "on-secondary-fixed": "#241a00",
+                    "primary-fixed-dim": "#b6c6f0",
+                    "surface-container-high": "#eae8e7",
+                    "secondary-fixed-dim": "#e9c349",
+                    "background": "#fbf9f8",
+                    "tertiary-fixed-dim": "#c5c7c8",
+                    "primary-container": "#1a2b4c",
+                    "surface-tint": "#4e5e82",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1b1c1c",
+                    "on-tertiary-fixed": "#191c1d",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#fed65b",
+                    "outline-variant": "#c5c6cf",
+                    "tertiary-container": "#292c2d",
+                    "inverse-surface": "#303030",
+                    "surface-container": "#efeded",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f2f0f0",
+                    "on-primary-fixed-variant": "#364669",
+                    "tertiary": "#151819",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#ffe088",
+                    "on-tertiary-container": "#919394",
+                    "surface-variant": "#e4e2e2",
+                    "on-secondary-container": "#745c00",
+                    "on-surface-variant": "#44474e",
+                    "surface-dim": "#dbd9d9",
+                    "tertiary-fixed": "#e1e3e4",
+                    "on-primary-fixed": "#071b3b",
+                    "surface": "#fbf9f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-lg": ["EB Garamond"],
+                    "headline-lg-mobile": ["EB Garamond"],
+                    "headline-display": ["EB Garamond"],
+                    "headline-md": ["EB Garamond"],
+                    "label-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                    "headline-display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fbf9f8; }
+        ::-webkit-scrollbar-thumb { background: #03163622; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #03163644; }
+    </style>
+</head>
+<body class="bg-surface-bright text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-bright/90 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-margin-desktop h-20 max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2" href="#">
+<img alt="Plenitud Radio Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFej7OMp0vSdjutLVs-u6QD1BhayFj2EcYFqfAHvphKxlAvLFWIiONz--YzNU7k2duPFoDcwtzaxbdJLJnQPM0rhYAUYdQE4vvfu2mpJtEbPps8SfpmeMTMvdjSkV-HboANtLBs4KvzHPfXyT9LWkUS9fAUdCi3E8zc1DR4TSWGaEr7IR6J4CJNK9dM32dL-uV1SufQC5B9wQKpTKLhuu0ZsoUISbTs_nHSXELALsIg6tNy50o9tYMYd7_wKIn2r0-XDg"/>
+<span class="font-headline-md text-headline-md font-bold text-primary hidden sm:block">Plenitud Radio</span>
+</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-primary border-b-2 border-brand-red font-bold pb-1 font-label-md" href="#">Radio</a>
+<a class="text-on-surface-variant font-medium font-label-md hover:text-brand-red transition-colors duration-200" href="#">Community</a>
+<a class="text-on-surface-variant font-medium font-label-md hover:text-brand-red transition-colors duration-200" href="#">News</a>
+<a class="text-on-surface-variant font-medium font-label-md hover:text-brand-red transition-colors duration-200" href="#">About</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container h-10 px-4 rounded-full gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-label-md w-48" placeholder="Buscar inspiración..." type="text"/>
+</div>
+<button class="bg-brand-red text-white px-6 py-2.5 rounded-full font-label-md hover:opacity-90 transition-all shadow-md active:scale-95">
+                    Escuchar Ahora
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-20 pb-24">
+<!-- Hero Slider Section -->
+<section class="relative h-[716px] w-full overflow-hidden">
+<div class="h-full w-full relative" id="hero-slider">
+<!-- Slide 1 -->
+<div class="absolute inset-0 transition-opacity duration-1000 opacity-100 slide">
+<div class="absolute inset-0 bg-black/30 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A panoramic view of a peaceful stone chapel perched on a foggy hillside during a golden sunrise. The warm morning light illuminates the cross atop the steeple, creating a spiritual and serene atmosphere in the rolling mountains of Europe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEqdTk3xiu_P9eCFQNCWL4tHgAeIrhfK_N5Im-a4QrfainOovp1LukIx3p7RshAoMe_ULPRYllh0QEihVRpfAemfmyaQlV1LdvnU-AxNF-Q5ckfGNoh2ILx5_3FwNvd5rXoDXTmby8sj8y_aCzuHIsJ42LxlbENgzcBr6ocKRhk5sjvFPM_wZFc29KJb07S9TFKtwLGTJQIJwqBjMTy8c7V8q-EXHb8ms7BgdiMjyGoJZW3RxDhcdPgA"/>
+</div>
+<!-- Slide 2 -->
+<div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Close-up of an open ancient bible on a rustic wooden table with vintage reading glasses resting on the pages. Soft, warm sunlight streams through a nearby window, highlighting the texture of the old paper and creating a reflective, scholarly mood in a quiet study room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpyp11-To4plG9PtsY4cxhZMM3WQ3R3JUe5_wqigkKfD9QhrL6JKy8_2utnvkeOreireYgqK0vpxzttM1QKfnhYUEI5zsSPKrYAQDog0lTaJkkTZz4oYnj_kgL-_sRmgLs1zxWfjSU-_BX4uvILDMg2VptUPyVqvp0aE59Vehj308pfm2O_KHJahPSogLCA1iqQS-COCzl_zM9hoNqLDGf58t5v-lR1cNuhEKYgI55DO6FTXQfKuhYJQ"/>
+</div>
+<!-- Slide 3 -->
+<div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
+<div class="absolute inset-0 bg-black/30 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A diverse community of men and women standing in a circle in a lush green garden, holding hands in a collective prayer. The late afternoon sun creates a soft halo effect around the group, emphasizing unity, peace, and spiritual connection in a natural, bright setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXCYztNap-IKxcK6MJXbXp98TUt5mlRUQwAEItTTiiSuJjNwmUCJio-I7aapb3iXmPyU5EE45j6AknSvpbeu4iRNbMPvjIwjIj6kPVzO0xJtphaxSpsJKxcTdm-YBHbQkzKVmg1S25d7DDDu7gS_5hZkMd0QVLfDG9OtCoCtnec5Up1CEyo85qavNS5TUPnHQNoncPPiHz1OVXQgHKLcCq3wcRmF8Kmg_1J4lIFQ4XLaASAUxCmHItJg"/>
+</div>
+</div>
+<!-- Hero Content -->
+<div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
+<h1 class="text-white font-headline-display text-headline-display mb-6 text-shadow-sm fade-in">
+                    Tu Refugio de Fe en el Aire
+                </h1>
+<p class="text-white/90 font-body-lg text-body-lg max-w-2xl mb-8 fade-in" style="animation-delay: 0.2s">
+                    Sintoniza la paz y la palabra de Dios cada día. Una comunidad unida por la fe, la música y la esperanza.
+                </p>
+<div class="flex gap-4 fade-in" style="animation-delay: 0.4s">
+<button class="bg-brand-red text-white px-8 py-3 rounded-full font-label-md flex items-center gap-2 hover:bg-brand-red/90 transition-all shadow-lg">
+<span class="material-symbols-outlined">play_circle</span>
+                        En Vivo
+                    </button>
+<button class="bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-3 rounded-full font-label-md hover:bg-white/30 transition-all">
+                        Explorar Programas
+                    </button>
+</div>
+</div>
+<!-- Slider Navigation -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex gap-3">
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all slider-dot active" onclick="setSlide(0)"></button>
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all slider-dot" onclick="setSlide(1)"></button>
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all slider-dot" onclick="setSlide(2)"></button>
+</div>
+</section>
+<!-- Daily Inspiration Section -->
+<section class="max-w-container-max mx-auto px-margin-desktop py-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Salmo del Día -->
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-[0_20px_40px_rgba(3,22,54,0.04)] border border-primary/5 relative overflow-hidden group">
+<div class="absolute -right-10 -top-10 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[160px] text-primary">auto_stories</span>
+</div>
+<span class="font-label-md text-brand-red tracking-widest uppercase mb-4 block">Salmo del Día</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">"El Señor es mi pastor, nada me faltará."</h2>
+<p class="font-body-md text-on-surface-variant italic mb-6">Salmo 23:1</p>
+<button class="text-primary font-label-md flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Leer más <span class="material-symbols-outlined">arrow_right_alt</span>
+</button>
+</div>
+<!-- Proverbio del Día -->
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-[0_20px_40px_rgba(3,22,54,0.04)] border border-primary/5 relative overflow-hidden group">
+<div class="absolute -right-10 -top-10 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[160px] text-brand-red">lightbulb</span>
+</div>
+<span class="font-label-md text-brand-red tracking-widest uppercase mb-4 block">Proverbio del Día</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">"El corazón alegre constituye buen remedio."</h2>
+<p class="font-body-md text-on-surface-variant italic mb-6">Proverbios 17:22</p>
+<button class="text-primary font-label-md flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Compartir <span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+</section>
+<!-- News Feed: Noticias del Reino -->
+<section class="bg-surface-container-low py-20">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Noticias del Reino</h2>
+<p class="font-body-md text-on-surface-variant">Actualidad y eventos que inspiran a nuestra comunidad.</p>
+</div>
+<a class="text-brand-red font-label-md hover:underline" href="#">Ver todas las noticias</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Article 1 -->
+<article class="bg-surface-bright rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A group of smiling young volunteers in casual clothing loading boxes of supplies into a delivery truck. The background shows a bright community center courtyard with blooming flowers under a clear blue sky, evoking a sense of service and charity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6agRr77GqIZJB13ZL4OSFHufvS5pqgz8Kfatux_0N2i7BaTqO8VxLEbb-HoCLIZow1N-QHyzcb_vRSSkYW5NlO9zoeWqV2FQaYPbpIG2S4bnarw82dRuncBre-qHIrKZkMiQmdUmJCIrmBaT3K8rmqcsOXNt1cxcbv4iyue2ZsoNOmvWoaXgnRHY3dkrjzXun8WDv1wgf1AxM8Tjg6n9B7PCKUSdQPhfA7KTZshn-CIxgeWLFDvz6qQ"/>
+</div>
+<div class="p-6">
+<span class="text-label-sm text-outline mb-2 block">12 Mar, 2024</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 leading-tight">Misión Esperanza: Nuevos proyectos en la comunidad</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3 mb-4">
+                                Este mes lanzamos tres nuevas iniciativas enfocadas en el apoyo escolar y la alimentación para familias vulnerables.
+                            </p>
+<a class="text-primary font-label-md hover:text-brand-red inline-flex items-center gap-1" href="#">
+                                Leer nota completa <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-surface-bright rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An interior shot of a modern music recording studio with glowing LED panels. A grand piano and various microphones are set up, and the lighting is a mix of warm gold and cool blue, reflecting a professional yet creative sanctuary for Christian music production." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm_QSRsPiuUbXOrIgyQ7_TXPC0WMz2AlG9uXWsVvcpB8Ga5cxbUYKVxTm48wDHQuzFNOhd4Wfhqats2-UmtJLMd3Zfnq2vOqpHQs6Uw7fi-fwOr3Ptc2EzfWieaZZZYLE9E2xzf3Mqtiz-AwTGHJZrt4WLkUb3qFvBnSBivMCTTUJW8X6Dn-S40MK1B3jytsJUOx7U708HiPGSv85MOty25zo0tCi7Nwjv1XPDOehWZM4WneijkndnKg"/>
+</div>
+<div class="p-6">
+<span class="text-label-sm text-outline mb-2 block">10 Mar, 2024</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 leading-tight">Lanzamiento: Nuevo álbum de Alabanza Celestial</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3 mb-4">
+                                El Grupo Esperanza presenta 'Refugio Eterno', un álbum que promete tocar corazones con su mensaje de paz.
+                            </p>
+<a class="text-primary font-label-md hover:text-brand-red inline-flex items-center gap-1" href="#">
+                                Leer nota completa <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-surface-bright rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A wide-angle interior view of a historic cathedral during an evening service. Soft candlelight flickers against stone pillars, and the high vaulted ceiling is bathed in deep shadows. The atmosphere is quiet, contemplative, and deeply spiritual as people sit in wooden pews." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhq0o1jQvKPWt-h87AVHt1eHZyGuU-1ORSu1llqFVIiVJI6DPm77VCc1GCws0pbyLqc_hZYQZIe6ucpF8fd7JBAcLC8IAAr5Mw3r5pvBdV5szhvoEyIPK4kA4Wta3OniONJzXFsxqJYDksp59MQexlEGNr1MS3kjgc7VrLMuvf75YH0btaQ2L1Ijq0iRNCYvwYaqgH1Z2zyvmjZI2UM7Ws5Hdx5s335d0dzdfT723tGGDaoZ5iO44VBw"/>
+</div>
+<div class="p-6">
+<span class="text-label-sm text-outline mb-2 block">08 Mar, 2024</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3 leading-tight">Congreso 'Voz de Fe' 2024: Inscripciones Abiertas</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-3 mb-4">
+                                Únete a miles de fieles en el evento más grande del año. Talleres, música en vivo y conferencias magistrales.
+                            </p>
+<a class="text-primary font-label-md hover:text-brand-red inline-flex items-center gap-1" href="#">
+                                Leer nota completa <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<!-- Persistent Player -->
+<div class="fixed bottom-0 w-full z-50 glass-effect border-t border-primary/5 shadow-[0_-10px_20px_rgba(0,0,0,0.03)] px-6 py-3">
+<div class="max-w-container-max mx-auto flex items-center justify-between gap-4">
+<!-- Song Info -->
+<div class="flex items-center gap-4 w-1/3">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white relative overflow-hidden">
+<span class="material-symbols-outlined">music_note</span>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-brand-red animate-pulse"></div>
+</div>
+<div class="hidden sm:block">
+<h4 class="font-label-md text-primary truncate max-w-[200px]">Alabanza Celestial</h4>
+<p class="text-label-sm text-on-surface-variant truncate max-w-[200px]">Grupo Esperanza</p>
+</div>
+</div>
+<!-- Controls -->
+<div class="flex flex-col items-center gap-1 w-1/3">
+<div class="flex items-center gap-6">
+<button class="text-primary/60 hover:text-brand-red transition-colors">
+<span class="material-symbols-outlined">skip_previous</span>
+</button>
+<button class="w-12 h-12 bg-brand-red text-white rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-md">
+<span class="material-symbols-outlined text-[32px]" id="play-icon">play_arrow</span>
+</button>
+<button class="text-primary/60 hover:text-brand-red transition-colors">
+<span class="material-symbols-outlined">skip_next</span>
+</button>
+</div>
+<div class="hidden md:flex items-center gap-2 w-full max-w-md px-4">
+<span class="text-label-sm text-outline">2:45</span>
+<div class="h-1 bg-primary-container rounded-full flex-1 relative overflow-hidden">
+<div class="absolute left-0 top-0 h-full w-[45%] bg-brand-red rounded-full"></div>
+</div>
+<span class="text-label-sm text-outline">5:12</span>
+</div>
+</div>
+<!-- Volume & Actions -->
+<div class="flex items-center justify-end gap-6 w-1/3">
+<div class="hidden lg:flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">volume_up</span>
+<input class="w-24 accent-brand-red h-1 bg-primary-container rounded-full appearance-none cursor-pointer" type="range"/>
+</div>
+<button class="text-primary/60 hover:text-brand-red">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="text-primary/60 hover:text-brand-red">
+<span class="material-symbols-outlined">queue_music</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 pt-16 pb-32">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<img alt="Plenitud Radio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK9LRTZPi9Y7uB87vyqwDCoUG95kSgFOP0SBqsx2Fi4HlWRDK0YGMwNkNKBFpfWyWGs6N_p6Ufl3k83NIRqUqs9NhJKdKOQDy14dVAzo3dBU5_TgyDAo4T56wclvWWAEOPYHndZMGJpJpl6sFCEFwkZtFnHUQHl0hXlWvE_2Gxm1vlg3Le2urd5rqADAM_qHuTkJXiLJehDbriavfIAw0NvfLvNpGWdAGOp9E5pDyqtb94ySI9Zw4pD5pd-IDz8qRGitM"/>
+<h3 class="font-headline-md text-headline-md text-primary">Plenitud Radio</h3>
+</div>
+<p class="font-body-md text-on-tertiary-fixed-variant mb-6 max-w-sm">
+                    Llevando la palabra de esperanza a cada rincón del mundo a través de la música y la reflexión diaria.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-primary hover:bg-brand-red hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">qr_code_2</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-primary hover:bg-brand-red hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-primary hover:bg-brand-red hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">rss_feed</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-primary mb-2">Navegación</h4>
+<a class="text-on-tertiary-fixed-variant font-label-sm hover:text-brand-red transition-all" href="#">Inicio</a>
+<a class="text-on-tertiary-fixed-variant font-label-sm hover:text-brand-red transition-all" href="#">Radio En Vivo</a>
+<a class="text-on-tertiary-fixed-variant font-label-sm hover:text-brand-red transition-all" href="#">Programación</a>
+<a class="text-on-tertiary-fixed-variant font-label-sm hover:text-brand-red transition-all" href="#">Podcasts</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-primary mb-2">Legal</h4>
+<a class="text-on-tertiary-fixed-variant font-label-sm hover:text-brand-red transition-all" href="#">Privacidad</a>
+<a class="text-on-tertiary-fixed-variant font-label-sm hover:text-brand-red transition-all" href="#">Términos</a>
+<a class="text-on-tertiary-fixed-variant font-label-sm hover:text-brand-red transition-all" href="#">Contacto</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-primary mb-4">Suscríbete a lo nuevo</h4>
+<p class="text-label-sm text-on-tertiary-fixed-variant mb-4">Recibe reflexiones diarias y noticias del Reino.</p>
+<div class="flex gap-2">
+<input class="bg-surface-bright border border-outline-variant/30 rounded-full px-4 py-2 flex-1 focus:ring-brand-red focus:border-brand-red text-label-sm" placeholder="Tu correo" type="email"/>
+<button class="bg-brand-red text-white px-6 py-2 rounded-full font-label-md">Unirse</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-12 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-label-sm text-outline-variant">© 2024 Plenitud Radio. Todos los derechos reservados.</p>
+</div>
+</footer>
+<!-- Mobile Navigation Shell -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center h-16 md:hidden px-4 bg-surface-container/95 backdrop-blur-md border-t border-primary/10 rounded-t-xl">
+<button class="flex flex-col items-center justify-center bg-brand-red text-white rounded-xl px-4 py-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">radio</span>
+<span class="font-label-md text-[10px]">Radio</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-md text-[10px]">Comunidad</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined">newspaper</span>
+<span class="font-label-md text-[10px]">Noticias</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-md text-[10px]">Ajustes</span>
+</button>
+</nav>
+<script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slider-dot');
+
+        function setSlide(index) {
+            slides[currentSlide].classList.remove('opacity-100');
+            slides[currentSlide].classList.add('opacity-0');
+            dots[currentSlide].classList.remove('bg-white', 'scale-125');
+            dots[currentSlide].classList.add('bg-white/50');
+
+            currentSlide = index;
+
+            slides[currentSlide].classList.add('opacity-100');
+            slides[currentSlide].classList.remove('opacity-0');
+            dots[currentSlide].classList.add('bg-white', 'scale-125');
+            dots[currentSlide].classList.remove('bg-white/50');
+        }
+
+        setInterval(() => {
+            let next = (currentSlide + 1) % slides.length;
+            setSlide(next);
+        }, 6000);
+
+        // Simple play/pause toggle
+        const playBtn = document.querySelector('button .material-symbols-outlined#play-icon').parentElement;
+        const playIcon = document.getElementById('play-icon');
+        let isPlaying = false;
+
+        playBtn.addEventListener('click', () => {
+            isPlaying = !isPlaying;
+            playIcon.textContent = isPlaying ? 'pause' : 'play_arrow';
+            playBtn.classList.toggle('scale-95');
+            setTimeout(() => playBtn.classList.toggle('scale-95'), 150);
+        });
+    </script>
+</body></html>
